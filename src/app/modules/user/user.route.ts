@@ -11,7 +11,7 @@ router.get("/all-users", userController.getAllUsers);
 // GET - Get single user by ID (dynamic route last)
 router.get("/:id", userController.getUserController);
 
-// PUT/PATCH - Update user
+// PUT/PATCH Update user 
 router.put("/:id", userController.updateUserController);
 router.patch("/:id", userController.updateUserController);
 
