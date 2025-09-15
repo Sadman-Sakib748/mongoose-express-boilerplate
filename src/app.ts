@@ -4,6 +4,7 @@ import { StatusCodes } from "http-status-codes";
 import { router } from "./app/routes";
 import { globalErrorHandler } from "./app/middlewares/globalErrorHandler";
 import notFound from "./app/middlewares/notFound";
+import { userRoute } from "./app/modules/user/user.route";
 
 const app = express()
 
@@ -13,7 +14,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-
+app.use("/api/users", userRoute);
 app.use('api/v1' , router)
 
 app.get('/', (req: Request, res: Response) => {
