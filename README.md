@@ -110,6 +110,6 @@ MIT License — free for personal & commercial use.
 
 
 🧑‍💻 Author
-Made with ❤️ by Ibrahim Sarkar
+Made with ❤️ by Sadman Sakib
 
 
